@@ -1,0 +1,66 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.menu {
+    background-color: rgb(255, 60, 0);
+    color: snow;
+    width: 1800px;
+   
+
+}
+
+.menu ul {
+    position: releative;
+    list-style: none;
+}
+ul li{
+    color: snow;
+    list-style-type: none;
+    display: inline-block;
+    background-color:  rgb(255, 60, 0);
+}
+a{
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+    color: snow;
+    /* background-color:  rgb(255, 60, 0); */
+    font-size: 30px;
+}
+a:hover {
+    color:snow; /* Цвет ссылки при наведении на нее курсора мыши */  
+    background-color: rgb(56, 0, 0);
+   }
+
+   .menu ul ul {
+       display: none;
+       /* display: list-item; */
+      
+       position: absolute;
+       top: 40px;
+       /* left: 20px; */
+       
+
+   } 
+   /* 
+   }
+   .menu ul ul {
+       display: list-item;
+       position: relative;
+   } */
+   .menu ul li:hover > ul {
+       display: inherit;
+
+   }
+   .menu ul ul li{
+    display: list-item;
+    position: relative;
+    width: 170px;}
+    
+
+    .menu ul ul ul li{
+        position: relative;
+        top:20px;
+        left: -50px;
+        
+    }
